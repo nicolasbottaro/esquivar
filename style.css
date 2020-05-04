@@ -12,6 +12,8 @@
     height:230px;
     border:none;
     outline:none;
+    cursor:default;
+    box-shadow:none;
 }
 
 .izquierdapersonaje, .derechapersonaje {
@@ -22,5 +24,7 @@
     outline:none;
 }
 .active {
-    background-color: yellow; 
+    background-color: yellow;
+     cursor:default;
+    box-shadow:none;
 }
