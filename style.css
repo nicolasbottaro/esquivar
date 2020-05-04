@@ -15,7 +15,7 @@ body, .container-fluid, .esq {
 .cuevader, .cuevaizq {
     background-color: blue;
     border:none;
-    height:auto;
+    height:80%;
     outline:none;
 }
 
