@@ -16,6 +16,15 @@
     box-shadow:none;
 }
 
+.cuevader:focus, .cuevaizq:focus {
+    background-color: blue;
+    height:230px;
+    border:none;
+    outline:none;
+    cursor:default;
+    box-shadow:none;
+}
+
 .izquierdapersonaje, .derechapersonaje {
     background-color: transparent;
     height:30px;
