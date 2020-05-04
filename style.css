@@ -7,22 +7,16 @@
     
 }
 
-.cuevader, .cuevaizq {
-    background-color: blue;
-    height:230px;
-    border:none;
-    outline:none;
-    cursor:default;
-    box-shadow:none;
+html, 
+body, .container-fluid, .esq {
+    height: 100%;
 }
 
-.cuevader:focus, .cuevaizq:focus {
+.cuevader, .cuevaizq {
     background-color: blue;
-    height:230px;
     border:none;
+    height:auto;
     outline:none;
-    cursor:default;
-    box-shadow:none;
 }
 
 .izquierdapersonaje, .derechapersonaje {
@@ -33,7 +27,5 @@
     outline:none;
 }
 .active {
-    background-color: yellow;
-     cursor:default;
-    box-shadow:none;
+    background-color: yellow; 
 }
