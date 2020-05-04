@@ -8,14 +8,17 @@
 }
 
 html, 
-body, .container-fluid, .esq {
+body, .container-fluid {
     height: 100%;
+}
+.esq {
+    height: 90%;
 }
 
 .cuevader, .cuevaizq {
     background-color: blue;
     border:none;
-    height:80%;
+    height:100%;
     outline:none;
 }
 
