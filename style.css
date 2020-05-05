@@ -1,5 +1,5 @@
 .top{
-    position:absolute:
+    position:absolute;
     z-index:10;
     top:0px;
 }
@@ -30,7 +30,7 @@ body, .container-fluid, .esq {
 
 .cuevader:focus, .cuevaizq:focus {
     background-color: blue;
-    height:230px;
+    height:100%;
     border:none;
     outline:none;
     cursor:default;
