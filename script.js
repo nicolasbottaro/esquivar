@@ -5,6 +5,7 @@ let back1 = document.querySelector('.derechapersonaje')
 let botonizq = document.querySelector('.cuevaizq')
 let botonder = document.querySelector('.cuevader')
 let empezarboton = document.querySelector('.empezar')
+let header = document.querySelector('.top')
 let pos = -90;
 let activo = Math.random();
 let nivel = 0;
@@ -15,6 +16,7 @@ empezarboton.addEventListener('click', empezarProg)
 
 
 function empezarProg() {
+header.style.display = "none";
 back0.classList.add("active");
 botonizq.addEventListener('click', cambiarActivoizq)
 botonder.addEventListener('click', cambiarActivoder)
@@ -46,8 +48,9 @@ function frame() {
       clearInterval(window.finalizar);
         elem0.style.backgroundImage = 'none';
       back0.classList.remove("active");
-      botonizq.removeEventListener('click', cambiarActivoizq)
-      botonder.removeEventListener('click', cambiarActivoder)
+      botonizq.removeEventListener('click', cambiarActivoizq);
+      botonder.removeEventListener('click', cambiarActivoder);
+      header.style.display = "flex";
       }
       } else {
       elem1.style.top = pos + 'px';
@@ -55,8 +58,9 @@ function frame() {
       clearInterval(window.finalizar);
         elem1.style.backgroundImage = 'none';
       back1.classList.remove("active");
-      botonizq.removeEventListener('click', cambiarActivoizq)
-      botonder.removeEventListener('click', cambiarActivoder)
+      botonizq.removeEventListener('click', cambiarActivoizq);
+      botonder.removeEventListener('click', cambiarActivoder);
+      header.style.display = "flex";
       }
       }
       }
