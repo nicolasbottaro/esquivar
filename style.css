@@ -6,7 +6,7 @@
 .puntaje  {
     position:absolute; 
     z-index:10;
-    top:0px;
+    top:10px;
 }
 .puntaje p {
     color:#343a92;
@@ -62,8 +62,12 @@ body, .container-fluid, .esq {
     border:none;
     height:100%;
     outline:none;
-         cursor:default;
 }
+
+.cuevader button, .cuevaizq button{
+    cursor:default;
+}
+
 
 .cuevader:focus, .cuevaizq:focus {
     height:100%;
