@@ -35,6 +35,7 @@ button.empezar {
     font-size:1.8em;
     border-radius:5px;
     box-shadow:none;
+    animation:pulsate 1s 0s infinite alternate ease-in-out
 }
 
 h2{
@@ -96,3 +97,9 @@ body, .container-fluid, .esq {
     background-position:center;
     height:120px;
 } 
+
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
