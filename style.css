@@ -2,11 +2,13 @@
     position:absolute; 
     z-index:10;
     top:100px;
+    background: url(./nave.png) no-repeat -9999px -9999px;
 }
 .puntaje  {
     position:absolute; 
     z-index:10;
     top:10px;
+    background: url(./meteorito.png) no-repeat -9999px -9999px;
 }
 .puntaje p {
     color:#343a92;
