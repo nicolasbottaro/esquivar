@@ -10,7 +10,7 @@ let pos = -130;
 let activo = Math.random();
 
 
-empezarboton.addEventListener('click', empezarProg())
+empezarboton.addEventListener('click', empezarProg)
 
 
 
