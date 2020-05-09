@@ -12,11 +12,11 @@ let nivel = 1;
 let jugadas = 0;
 
 
-empezarboton.addEventListener('click', empezarProg)
+empezarboton.addEventListener('click', empezarProg(1))
 
 
 
-function empezarProg() {
+function empezarProg(nivel) {
 header.style.display = "none";
 back0.classList.add("active");
 botonizq.addEventListener('click', cambiarActivoizq)
@@ -24,17 +24,17 @@ botonder.addEventListener('click', cambiarActivoder)
 pos = -130;
 activo = Math.random();
 back0.classList.add("active");
-nivel = 1;
 jugadas = 0;
 window.finalizar = setInterval(frame, 3-nivel);
 }
   
 function frame() {
-  	if (pos == 230){
+      if (pos == 230){
         pos = '-130';
         activo = Math.random();	
-      } else {
-	if (activo < 0.5){
+	jugadas++;
+	if (jugadas==10){nivel=2;clearInterval(window.finalizar);}
+      } else if (activo < 0.5){
  	elem0.style.backgroundImage = "url('meteorito.png')";
         elem1.style.backgroundImage = 'none';
       } else {
@@ -51,16 +51,18 @@ function frame() {
       botonizq.removeEventListener('click', cambiarActivoizq);
       botonder.removeEventListener('click', cambiarActivoder);
       header.style.display = "inline";
+      nivel=1;
       }
       } else {
       elem1.style.top = pos + 'px';
       if ( pos == 130 && back1.classList.contains("active")){
       clearInterval(window.finalizar);
-        elem1.style.backgroundImage = 'none';
+      elem1.style.backgroundImage = 'none';
       back1.classList.remove("active");
       botonizq.removeEventListener('click', cambiarActivoizq);
       botonder.removeEventListener('click', cambiarActivoder);
       header.style.display = "inline";
+      nivel=1;
       }
       }
       }
