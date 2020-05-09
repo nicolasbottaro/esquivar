@@ -26,7 +26,7 @@ activo = Math.random();
 back0.classList.add("active");
 nivel = 1;
 jugadas = 0;
-window.finalizar = setInterval(frame, 8-nivel);
+window.finalizar = setInterval(frame, 6-nivel);
 }
   
 function frame() {
