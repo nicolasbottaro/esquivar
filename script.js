@@ -9,14 +9,15 @@ let pos = -90;
 let activo = Math.random();
 let nivel = 0;
 
-back0.classList.add("active");
-botonizq.addEventListener('click', cambiarActivoizq)
-botonder.addEventListener('click', cambiarActivoder)
+
 empezarboton.addEventListener('click', empezarProg)
 
 
 
 function empezarProg() {
+back0.classList.add("active");
+botonizq.addEventListener('click', cambiarActivoizq)
+botonder.addEventListener('click', cambiarActivoder)
 pos = -90;
 activo = Math.random();
 back0.classList.add("active");
@@ -31,11 +32,11 @@ function frame() {
       } else {
 
 			if (activo < 0.5){
- 			  elem0.style.backgroundColor = 'red';
+ 			  elem0.style.backgroundImage = "url('meteorito.png')";
         elem1.style.backgroundColor = 'transparent';
 
       } else {
- 			  elem1.style.backgroundColor = 'red';
+ 			  elem1.style.backgroundImage = "url('meteorito.png')";
         elem0.style.backgroundColor = 'transparent';
 
       }
