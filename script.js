@@ -75,4 +75,3 @@ function cambiarActivoder() {
    back0.classList.add("active");
    back1.classList.remove("active");
 }
-© 2020 GitHub, Inc.
