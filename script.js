@@ -28,7 +28,7 @@ window.finalizar = setInterval(frame, 10-nivel);
 }
   
 function frame() {
-  		if (pos== 170){
+  		if (pos== 210){
         pos = '-90';
         activo = Math.random();
       } else {
