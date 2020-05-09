@@ -24,7 +24,6 @@ botonder.addEventListener('click', cambiarActivoder)
 pos = -130;
 activo = Math.random();
 back0.classList.add("active");
-jugadas = 0;
 window.finalizar = setInterval(frame, 2);
 }
   
@@ -33,10 +32,10 @@ function frame() {
         pos = '-130';
         activo = Math.random();	
       } else if (activo < 0.5){
- 	elem0.style.backgroundImage = "url('meteorito.png')";
+ 	      elem0.style.backgroundImage = "url('meteorito.png')";
         elem1.style.backgroundImage = 'none';
       } else {
- 	elem1.style.backgroundImage = "url('meteorito.png')";
+ 	      elem1.style.backgroundImage = "url('meteorito.png')";
         elem0.style.backgroundImage = 'none';
       }
       pos++;
