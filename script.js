@@ -28,7 +28,7 @@ window.finalizar = setInterval(frame, 10-nivel);
 }
   
 function frame() {
-  		if (pos== 240){
+  		if (pos== 230){
         pos = '-130';
         activo = Math.random();
       } else {
@@ -44,7 +44,7 @@ function frame() {
       pos++;
       if (activo < 0.5){
       elem0.style.top = pos + 'px';
-      if ( pos == 140 && back0.classList.contains("active")){
+      if ( pos == 130 && back0.classList.contains("active")){
       clearInterval(window.finalizar);
         elem0.style.backgroundImage = 'none';
       back0.classList.remove("active");
@@ -54,7 +54,7 @@ function frame() {
       }
       } else {
       elem1.style.top = pos + 'px';
-      if ( pos == 140 && back1.classList.contains("active")){
+      if ( pos == 130 && back1.classList.contains("active")){
       clearInterval(window.finalizar);
         elem1.style.backgroundImage = 'none';
       back1.classList.remove("active");
