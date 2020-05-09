@@ -26,14 +26,13 @@ body, .container-fluid, .esq {
 }
 
 .cuevader, .cuevaizq {
-    background-color: blue;
+    background-image: url(./tile.png);
     border:none;
     height:100%;
     outline:none;
 }
 
 .cuevader:focus, .cuevaizq:focus {
-    background-color: blue;
     height:100%;
     border:none;
     outline:none;
@@ -49,7 +48,7 @@ body, .container-fluid, .esq {
     outline:none;
 }
 .active {
-    background-color: yellow;
+    background-image: url(./nave.png);
      cursor:default;
     box-shadow:none;
 } 
