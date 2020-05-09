@@ -8,7 +8,8 @@ let empezarboton = document.querySelector('.empezar')
 let header = document.querySelector('.top')
 let pos = -130;
 let activo = Math.random();
-let nivel = 0;
+let nivel = 1;
+let jugadas = 0;
 
 
 empezarboton.addEventListener('click', empezarProg)
@@ -23,14 +24,16 @@ botonder.addEventListener('click', cambiarActivoder)
 pos = -130;
 activo = Math.random();
 back0.classList.add("active");
-nivel = 3;
-window.finalizar = setInterval(frame, 10-nivel);
+nivel = 1;
+jugadas = 0;
+window.finalizar = setInterval(frame, 8-nivel);
 }
   
 function frame() {
-  		if (pos== 230){
+  	if (pos == 230){
         pos = '-130';
         activo = Math.random();
+		
       } else {
 	if (activo < 0.5){
  	elem0.style.backgroundImage = "url('meteorito.png')";
@@ -44,9 +47,9 @@ function frame() {
       pos++;
       if (activo < 0.5){
       elem0.style.top = pos + 'px';
-      if ( pos >= 130 && back0.classList.contains("active")){
+      if ( pos == 130 && back0.classList.contains("active")){
       clearInterval(window.finalizar);
-        elem0.style.backgroundImage = 'none';
+      elem0.style.backgroundImage = 'none';
       back0.classList.remove("active");
       botonizq.removeEventListener('click', cambiarActivoizq);
       botonder.removeEventListener('click', cambiarActivoder);
@@ -54,7 +57,7 @@ function frame() {
       }
       } else {
       elem1.style.top = pos + 'px';
-      if ( pos >= 130 && back1.classList.contains("active")){
+      if ( pos == 130 && back1.classList.contains("active")){
       clearInterval(window.finalizar);
         elem1.style.backgroundImage = 'none';
       back1.classList.remove("active");
