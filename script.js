@@ -9,10 +9,9 @@ let header = document.querySelector('.top')
 let pos = -130;
 let activo = Math.random();
 let jugadas = 0;
-let nivel = 1;
 
 
-empezarboton.addEventListener('click', empezarProg(nivel))
+empezarboton.addEventListener('click', empezarProg(1))
 
 
 
