@@ -32,8 +32,6 @@ function frame() {
       if (pos == 230){
         pos = '-130';
         activo = Math.random();	
-	jugadas++;
-	if (jugadas==10){nivel=2;clearInterval(window.finalizar);}
       } else if (activo < 0.5){
  	elem0.style.backgroundImage = "url('meteorito.png')";
         elem1.style.backgroundImage = 'none';
