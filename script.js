@@ -6,7 +6,7 @@ let botonizq = document.querySelector('.cuevaizq')
 let botonder = document.querySelector('.cuevader')
 let empezarboton = document.querySelector('.empezar')
 let header = document.querySelector('.top')
-let pos = -90;
+let pos = -120;
 let activo = Math.random();
 let nivel = 0;
 
@@ -20,7 +20,7 @@ header.style.display = "none";
 back0.classList.add("active");
 botonizq.addEventListener('click', cambiarActivoizq)
 botonder.addEventListener('click', cambiarActivoder)
-pos = -90;
+pos = -120;
 activo = Math.random();
 back0.classList.add("active");
 nivel = 3;
@@ -28,8 +28,8 @@ window.finalizar = setInterval(frame, 10-nivel);
 }
   
 function frame() {
-  		if (pos== 210){
-        pos = '-90';
+  		if (pos== 220){
+        pos = '-120';
         activo = Math.random();
       } else {
 	if (activo < 0.5){
