@@ -16,7 +16,9 @@ button.empezar {
     font-family: 'Amatic SC', cursive;
     font-weight:normal;
     background:none;
-    border:none;
+    border:1px solid white;
+    font-size:1.8em;
+    border-radius:5px;
     box-shadow:none;
 }
 
