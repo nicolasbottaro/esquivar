@@ -64,7 +64,7 @@ body, .container-fluid, .esq {
     background-color: transparent;
     height:120px;
     position:relative;
-    top:85px;
+    top:150px;
     outline:none;
 }
 .active {
