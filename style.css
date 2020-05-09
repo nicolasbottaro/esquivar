@@ -3,6 +3,18 @@
     z-index:10;
     top:100px;
 }
+.puntaje  {
+    position:absolute; 
+    z-index:10;
+    top:0px;
+}
+.puntaje p {
+    color:#343a92;
+    font-family: 'Amatic SC', cursive;
+    font-weight:bold;
+    background-color:white;
+    font-size:1.8em;
+}
 
 .top h1{
     color:white;
