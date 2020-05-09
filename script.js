@@ -8,15 +8,14 @@ let empezarboton = document.querySelector('.empezar')
 let header = document.querySelector('.top')
 let pos = -130;
 let activo = Math.random();
-let nivel = 1;
 let jugadas = 0;
 
 
-empezarboton.addEventListener('click', empezarProg)
+empezarboton.addEventListener('click', empezarProg(1))
 
 
 
-function empezarProg() {
+function empezarProg(nivel) {
 header.style.display = "none";
 back0.classList.add("active");
 botonizq.addEventListener('click', cambiarActivoizq)
@@ -24,7 +23,6 @@ botonder.addEventListener('click', cambiarActivoder)
 pos = -130;
 activo = Math.random();
 back0.classList.add("active");
-nivel = 1;
 jugadas = 0;
 window.finalizar = setInterval(frame, 3-nivel);
 }
