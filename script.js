@@ -26,23 +26,20 @@ activo = Math.random();
 back0.classList.add("active");
 nivel = 1;
 jugadas = 0;
-window.finalizar = setInterval(frame, 4-nivel);
+window.finalizar = setInterval(frame, 3-nivel);
 }
   
 function frame() {
   	if (pos == 230){
         pos = '-130';
-        activo = Math.random();
-		
+        activo = Math.random();	
       } else {
 	if (activo < 0.5){
  	elem0.style.backgroundImage = "url('meteorito.png')";
         elem1.style.backgroundImage = 'none';
-
       } else {
  	elem1.style.backgroundImage = "url('meteorito.png')";
         elem0.style.backgroundImage = 'none';
-
       }
       pos++;
       if (activo < 0.5){
