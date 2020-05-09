@@ -30,14 +30,13 @@ function frame() {
         pos = '-90';
         activo = Math.random();
       } else {
-
-			if (activo < 0.5){
- 			  elem0.style.backgroundImage = "url('meteorito.png')";
-        elem1.style.backgroundColor = 'transparent';
+	if (activo < 0.5){
+ 	elem0.style.backgroundImage = "url('meteorito.png')";
+        elem1.style.backgroundImage = 'none';
 
       } else {
- 			  elem1.style.backgroundImage = "url('meteorito.png')";
-        elem0.style.backgroundColor = 'transparent';
+ 	elem1.style.backgroundImage = "url('meteorito.png')";
+        elem0.style.backgroundImage = 'none';
 
       }
       pos++;
@@ -45,15 +44,19 @@ function frame() {
       elem0.style.top = pos + 'px';
       if ( pos == 85 && back0.classList.contains("active")){
       clearInterval(window.finalizar);
-      elem0.style.backgroundColor = 'transparent';
+        elem0.style.backgroundImage = 'none';
       back0.classList.remove("active");
+      botonizq.removeEventListener('click', cambiarActivoizq)
+      botonder.removeEventListener('click', cambiarActivoder)
       }
       } else {
       elem1.style.top = pos + 'px';
       if ( pos == 85 && back1.classList.contains("active")){
       clearInterval(window.finalizar);
-      elem1.style.backgroundColor = 'transparent';
+        elem1.style.backgroundImage = 'none';
       back1.classList.remove("active");
+      botonizq.removeEventListener('click', cambiarActivoizq)
+      botonder.removeEventListener('click', cambiarActivoder)
       }
       }
       }
