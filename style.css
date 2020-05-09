@@ -29,10 +29,11 @@ body, .container-fluid, .esq {
 }
 
 .cuevader, .cuevaizq {
-    background-image: url(./tile.png);
+    background-image: url(./tile.jpg);
     border:none;
     height:100%;
     outline:none;
+         cursor:default;
 }
 
 .cuevader:focus, .cuevaizq:focus {
